@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Form - Input</title>
+    <link
+      rel="stylesheet"
+      href="https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1>회원가입</h1>
+    <form action="#" method="POST">
+      <label for="user-name">이름</label>
+      <input id="user-name" type="text" placeholder="이름" required />
+      <label for="user-id">아이디</label>
+      <input
+        id="user-id"
+        type="text"
+        placeholder="아이디"
+        minlength="5"
+        maxlength="12"
+        required
+      />
+      <label for="user-pwd">비밀번호</label>
+      <input id="user-pwd" type="password" placeholder="비밀번호" required />
+      <label for="user-email">이메일</label>
+      <input id="user-email" type="email" placeholder="email" />
+      <label for="user-tel">전화번호</label>
+      <input
+        id="user-tel"
+        type="tel"
+        placeholder="전화번호(01*-****-****)"
+        pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"
+      />
+      <label for="user-age">만 나이</label>
+      <input
+        id="user-age"
+        type="number"
+        placeholder="만 나이"
+        min="12"
+        max="122"
+      />
+      <label for="user-pic">프로필 사진</label>
+      <input id="user-pic" type="file" accept="image/*, audio/*, video/*" />
+      <button type="submit">가입하기</button>
+    </form>
+  </body>
+</html>
